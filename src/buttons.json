@@ -1,0 +1,59 @@
+{
+  "buttons": [
+    {
+      "symbol": "C"
+    },
+    {
+      "symbol": "÷",
+      "newLine": true
+    },
+    {
+      "symbol": "7"
+    },
+    {
+      "symbol": "8"
+    },
+    {
+      "symbol": "9"
+    },
+    {
+      "symbol": "×",
+      "newLine": true
+    },
+    {
+      "symbol": "4"
+    },
+    {
+      "symbol": "5"
+    },
+    {
+      "symbol": "6"
+    },
+    {
+      "symbol": "-",
+      "newLine": true
+    },
+    {
+      "symbol": "1"
+    },
+    {
+      "symbol": "2"
+    },
+    {
+      "symbol": "3"
+    },
+    {
+      "symbol": "+",
+      "newLine": true
+    },
+    {
+      "symbol": "0"
+    },
+    {
+      "symbol": "."
+    },
+    {
+      "symbol": "="
+    }
+  ]
+}
