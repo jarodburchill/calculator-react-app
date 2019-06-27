@@ -8,6 +8,12 @@ const Button = (props) => {
         return styles.clearButton;
       case "0":
         return styles.zeroButton;
+      case "÷":
+      case "×":
+      case "-":
+      case "+":
+      case "=":
+        return styles.operatorButton;
       default:
         return styles.defaultButton;
     }

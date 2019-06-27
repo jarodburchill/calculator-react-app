@@ -15,7 +15,6 @@ const App = () => {
 
   return (
     <>
-      <input />
       <br />
       {buttons.map((item, index) => {
         return (
