@@ -1,1 +1,1 @@
-# My New React Project Template
+# CalculatorReactApp
