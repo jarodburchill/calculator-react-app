@@ -1,18 +1,18 @@
 @mixin button($widthMultiplier, $color, $backgroundColor) {
   //consts
   $width: 50px;
-  $margin: 5px;
+  $margin: 2.5px;
 
   //sizing
   height: 50px;
   border: 0px;
   border-radius: 50px;
-  margin: $margin $margin 0 0;
+  margin: $margin;
   @if $widthMultiplier == 1 {
     width: ($width);
   }
   @else {
-    width: ($width * $widthMultiplier + $margin * ($widthMultiplier - 1));
+    width: ($width * $widthMultiplier + $margin * (($widthMultiplier - 1) *2));
   }
 
   //font
