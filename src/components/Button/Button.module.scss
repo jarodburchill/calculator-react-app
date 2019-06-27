@@ -22,7 +22,7 @@
   //background
   background: $backgroundColor;
   &:hover {
-    background: lighten($backgroundColor, 10%);
+    background: lighten($backgroundColor, 25%);
   }
 }
 .defaultButton {
@@ -35,5 +35,5 @@
   @include button(2, white, rgb(100, 100, 100));
 }
 .operatorButton {
-  @include button(1, white, rgb(255, 125, 0))
+  @include button(1, white, rgb(255, 125, 0));
 }
