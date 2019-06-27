@@ -20,10 +20,10 @@ const App = () => {
       {buttons.map((item, index) => {
         return (
           <span key={index}>
+            {renderNewLine(item.newLine)}
             <Button
               symbol={item.symbol}
             />
-            {renderNewLine(item.newLine)}
           </span>
         );
       })}

@@ -4,11 +4,11 @@
       "symbol": "C"
     },
     {
-      "symbol": "÷",
-      "newLine": true
+      "symbol": "÷"
     },
     {
-      "symbol": "7"
+      "symbol": "7",
+      "newLine": true
     },
     {
       "symbol": "8"
@@ -17,11 +17,11 @@
       "symbol": "9"
     },
     {
-      "symbol": "×",
-      "newLine": true
+      "symbol": "×"
     },
     {
-      "symbol": "4"
+      "symbol": "4",
+      "newLine": true
     },
     {
       "symbol": "5"
@@ -30,11 +30,11 @@
       "symbol": "6"
     },
     {
-      "symbol": "-",
-      "newLine": true
+      "symbol": "-"
     },
     {
-      "symbol": "1"
+      "symbol": "1",
+      "newLine": true
     },
     {
       "symbol": "2"
@@ -43,11 +43,11 @@
       "symbol": "3"
     },
     {
-      "symbol": "+",
-      "newLine": true
+      "symbol": "+"
     },
     {
-      "symbol": "0"
+      "symbol": "0",
+      "newLine": true
     },
     {
       "symbol": "."
