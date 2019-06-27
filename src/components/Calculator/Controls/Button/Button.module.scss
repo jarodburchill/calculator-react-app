@@ -1,10 +1,10 @@
 @mixin button($widthMultiplier, $color, $backgroundColor) {
   //consts
-  $width: 100px;
-  $margin: 10px;
+  $width: 50px;
+  $margin: 5px;
 
   //sizing
-  height: 100px;
+  height: 50px;
   border: 0px;
   border-radius: 50px;
   margin: $margin $margin 0 0;

@@ -1,32 +1,12 @@
 import React from 'react';
-import Button from "./Button/Button";
+import Calculator from './Calculator/Calculator';
+import styles from './App.module.scss';
 
 const App = () => {
-  const data = require('../buttons.json');
-  const buttons = data.buttons;
-
-  const renderNewLine = (newLine) => {
-    if (newLine) {
-      return (
-        <br />
-      );
-    }
-  }
-
   return (
-    <>
-      <br />
-      {buttons.map((item, index) => {
-        return (
-          <span key={index}>
-            {renderNewLine(item.newLine)}
-            <Button
-              symbol={item.symbol}
-            />
-          </span>
-        );
-      })}
-    </>
+    <div className={styles.container}>
+      <Calculator />
+    </div>
   );
 }
 
