@@ -24,6 +24,8 @@ const Controls = (props) => {
               symbol={item.symbol}
               displayValue={props.displayValue}
               setDisplayValue={props.setDisplayValue}
+              formula={props.formula}
+              setFormula={props.setFormula}
             />
           </span>
         );
