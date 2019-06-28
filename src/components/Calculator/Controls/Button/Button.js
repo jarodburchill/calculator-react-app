@@ -38,7 +38,7 @@ const Button = (props) => {
       case "×":
       case "-":
       case "+":
-        props.setDisplayValue(props.displayValue + props.symbol);
+        props.setDisplayValue(props.displayValue + props.operator);
         props.setFormula("");
         break;
       case ".":

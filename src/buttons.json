@@ -4,7 +4,8 @@
       "symbol": "C"
     },
     {
-      "symbol": "÷"
+      "symbol": "÷",
+      "operator": "/"
     },
     {
       "symbol": "7",
@@ -17,7 +18,8 @@
       "symbol": "9"
     },
     {
-      "symbol": "×"
+      "symbol": "×",
+      "operator": "*"
     },
     {
       "symbol": "4",
@@ -30,7 +32,8 @@
       "symbol": "6"
     },
     {
-      "symbol": "-"
+      "symbol": "-",
+      "operator": "-"
     },
     {
       "symbol": "1",
@@ -43,7 +46,8 @@
       "symbol": "3"
     },
     {
-      "symbol": "+"
+      "symbol": "+",
+      "operator": "+"
     },
     {
       "symbol": "0",

@@ -22,6 +22,7 @@ const Controls = (props) => {
             {renderNewLine(item.newLine)}
             <Button
               symbol={item.symbol}
+              operator={item.operator}
               displayValue={props.displayValue}
               setDisplayValue={props.setDisplayValue}
               formula={props.formula}
