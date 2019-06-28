@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Button.module.scss';
 
 const Button = (props) => {
+  const [calculate, setCalculate] = useState(false);
+
   const getButtonStyle = () => {
     switch (props.symbol) {
       case "C":
@@ -20,15 +22,18 @@ const Button = (props) => {
   }
 
   useEffect(() => {
-    if (props.formula !== "") {
+    if (calculate) {
       props.setDisplayValue(eval(props.formula));
+      props.setFormula(props.formula + props.symbol);
+      setCalculate(false);
     }
   }, [props.formula]);
 
   const onButtonClick = e => {
     switch (props.symbol) {
       case "=":
-        props.setFormula(props.displayValue);
+        setCalculate(true);
+        props.setFormula(props.formula + props.displayValue);
         break;
       case "C":
         props.setDisplayValue("0");
@@ -38,15 +43,26 @@ const Button = (props) => {
       case "×":
       case "-":
       case "+":
-        props.setDisplayValue(props.displayValue + props.operator);
-        props.setFormula("");
+        if (props.formula.includes("=")) {
+          props.setFormula(props.displayValue + props.operator);
+          props.setDisplayValue("0");
+        }
+        else {
+          props.setFormula(props.formula + props.displayValue + props.operator);
+          props.setDisplayValue("0");
+        }
         break;
       case ".":
-        props.setDisplayValue(props.displayValue + props.symbol);
-        props.setFormula("");
+        if (props.formula.includes("=")) {
+          props.setFormula("");
+          props.setDisplayValue("0" + props.symbol);
+        }
+        else if (!props.displayValue.includes(".")) {
+          props.setDisplayValue(props.displayValue + props.symbol);
+        }
         break;
       default:
-        if (props.formula !== "") {
+        if (props.formula.includes("=")) {
           props.setFormula("");
           props.setDisplayValue(props.symbol);
         }
