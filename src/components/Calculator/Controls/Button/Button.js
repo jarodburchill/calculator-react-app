@@ -32,8 +32,10 @@ const Button = (props) => {
   const onButtonClick = e => {
     switch (props.symbol) {
       case "=":
-        setCalculate(true);
-        props.setFormula(props.formula + props.displayValue);
+        if (!props.formula.includes("=")) {
+          setCalculate(true);
+          props.setFormula(props.formula + props.displayValue);
+        }
         break;
       case "C":
         props.setDisplayValue("0");
