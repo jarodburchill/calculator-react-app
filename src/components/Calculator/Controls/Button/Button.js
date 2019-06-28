@@ -32,6 +32,7 @@ const Button = (props) => {
         break;
       case "C":
         props.setDisplayValue("0");
+        props.setFormula("");
         break;
       case "÷":
       case "×":
