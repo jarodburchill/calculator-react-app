@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from './Button/Button';
-import styles from './Controls.module.scss';
 
 const Controls = (props) => {
   const data = require('../../../buttons.json');
