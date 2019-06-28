@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button/Button';
 import styles from './Controls.module.scss';
 
-const Controls = () => {
+const Controls = (props) => {
   const data = require('../../../buttons.json');
   const buttons = data.buttons;
 
@@ -22,6 +22,8 @@ const Controls = () => {
             {renderNewLine(item.newLine)}
             <Button
               symbol={item.symbol}
+              displayValue={props.displayValue}
+              setDisplayValue={props.setDisplayValue}
             />
           </span>
         );

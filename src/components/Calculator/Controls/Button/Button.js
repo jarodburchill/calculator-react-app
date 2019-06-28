@@ -19,8 +19,12 @@ const Button = (props) => {
     }
   }
 
+  const onButtonClick = e => {
+    props.setDisplayValue(props.displayValue + props.symbol);
+  }
+
   return (
-    <button className={getButtonStyle()}>
+    <button onClick={onButtonClick} className={getButtonStyle()}>
       {props.symbol}
     </button>
   );
