@@ -39,11 +39,11 @@ const Button = (props) => {
       case "-":
       case "+":
         props.setDisplayValue(props.displayValue + props.symbol);
+        props.setFormula("");
         break;
       case ".":
-        if (!props.displayValue.includes(".")) {
-          props.setDisplayValue(props.displayValue + props.symbol);
-        }
+        props.setDisplayValue(props.displayValue + props.symbol);
+        props.setFormula("");
         break;
       default:
         if (props.displayValue === "0") {
@@ -51,6 +51,11 @@ const Button = (props) => {
         }
         else {
           props.setDisplayValue(props.displayValue + props.symbol);
+        }
+
+        if (props.formula !== "") {
+          props.setFormula("");
+          props.setDisplayValue(props.symbol);
         }
         break;
     }

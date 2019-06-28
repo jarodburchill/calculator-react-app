@@ -6,10 +6,12 @@ const Display = (props) => {
     <>
       <input
         value={props.formula}
+        readOnly={true}
         className={styles.formula}
       />
       <input
         value={props.displayValue}
+        readOnly={true}
         className={styles.display}
       />
     </>
