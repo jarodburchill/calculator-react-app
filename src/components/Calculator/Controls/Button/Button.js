@@ -46,16 +46,15 @@ const Button = (props) => {
         props.setFormula("");
         break;
       default:
-        if (props.displayValue === "0") {
+        if (props.formula !== "") {
+          props.setFormula("");
+          props.setDisplayValue(props.symbol);
+        }
+        else if (props.displayValue === "0") {
           props.setDisplayValue(props.symbol);
         }
         else {
           props.setDisplayValue(props.displayValue + props.symbol);
-        }
-
-        if (props.formula !== "") {
-          props.setFormula("");
-          props.setDisplayValue(props.symbol);
         }
         break;
     }
