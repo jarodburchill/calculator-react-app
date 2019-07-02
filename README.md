@@ -1,2 +1,2 @@
 # CalculatorReactApp
-https://jarodburchill.github.io/CalculatorReactApp
+GitHub Pages: https://jarodburchill.github.io/CalculatorReactApp
