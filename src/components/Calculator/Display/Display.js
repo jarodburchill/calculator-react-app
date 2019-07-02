@@ -3,7 +3,7 @@ import styles from './Display.module.scss'
 
 const Display = (props) => {
   return (
-    <>
+    <div className={styles.container}>
       <input
         value={props.formula}
         readOnly={true}
@@ -14,7 +14,7 @@ const Display = (props) => {
         readOnly={true}
         className={styles.display}
       />
-    </>
+    </div>
   );
 }
 

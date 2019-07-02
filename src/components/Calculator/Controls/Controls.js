@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button/Button';
+import styles from './Controls.module.scss'
 
 const Controls = (props) => {
   const data = require('../../../buttons.json');
@@ -14,7 +15,7 @@ const Controls = (props) => {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       {buttons.map((item, index) => {
         return (
           <span key={index}>

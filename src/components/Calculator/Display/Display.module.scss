@@ -1,3 +1,10 @@
+.container {
+  border: 2px solid rgb(100, 100, 100); 
+  padding: 10px;
+  border-radius: 30px;
+  width: 220px;
+  margin-bottom: 10px;
+}
 .formula {
   width: 200px;
   font-size: 100%;
@@ -17,7 +24,7 @@
   width: 200px;
   font-size: 250%;
   text-align: right;
-  margin: 5px 5px 15px 5px;
+  margin: 5px;
   padding: 0;
   border: 0;
   outline: 0;
