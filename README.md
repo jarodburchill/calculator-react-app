@@ -5,6 +5,7 @@ Functional calculator built in React, styled using Sass.
 - Improved React syntax
 - Mapping through JSON files
 ## GitHub Pages:
+### Link:
 https://jarodburchill.github.io/CalculatorReactApp
 ### Preview:
 ![alt text](preview.png "Preview Image")
