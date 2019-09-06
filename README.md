@@ -1,7 +1,7 @@
 # CalculatorReactApp
 Functional calculator built in React, styled using Sass.
 ## What I Learned:
-- Using Sass variables, encapsulation, calculations and mixins
+- Using Sass variables, nesting, calculations and mixins
 - Improved React syntax and efficiency 
 - Mapping through JSON files
 ## GitHub Pages:
