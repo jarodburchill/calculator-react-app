@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jarodburchill.github.io/CalculatorReactApp",
-  "name": "calculator",
+  "homepage": "https://jarodburchill.github.io/calculator-react-app",
+  "name": "calculator-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
